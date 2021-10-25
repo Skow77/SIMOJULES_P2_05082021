@@ -43,7 +43,7 @@ body,html{
 }
 
 .lieu{
-  border: 1px solid black;
+  border: 1px solid pink;
   border-radius: 20px;
   width: 238px;
 }
@@ -54,27 +54,67 @@ mark{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; 
 }
+
 .filtres{
   display: flex;
   justify-content: space-around
 }
 
-.propos{
- 
+.recherche{
+  border: 1px black solid ;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 30px;
 }
 
-.hebergement{
+.recherche  i{
+  padding: 15px;
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: grey; 
+}
+
+#marecherche{
   
 }
 
-.assistance{
- 
+.filtre{
+  margin-left: 20px;
+  border: 1px gray solid;
+  border-radius: 20px;
+  line-height: 33px;
+  display: inline-block;
+  padding-right: 15px;
+  margin: 30px;
+}
+
+.filtre > i{
+  background-color: cornflowerblue;
+  color: blue;
+  border-radius: 50px;
+  line-height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.bouton{
+  background-color: blue;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  line-height: 15px;
+  padding: 11px;
 }
 
 .footer{
   display: flex;
   justify-content: space-around;
   background-color: rgb(243, 243, 243);
+  margin-top: 50px;
+ 
 }
 
 .rechercher{
@@ -124,8 +164,8 @@ mark{
 
 #activite > .container > .grid > div{
   width: 23%;
-  height: 100px;
-  background-color: hotpink;
+  height: 100%;
+  
 }
 
 .carte{
@@ -142,12 +182,85 @@ mark{
   object-fit: cover;
 }
 
+.carte0{
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 3px black;
+}
+.carte1{
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 3px black;
+}
+
+.carte2{
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 3px black;
+}
+
+.carte0 > img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 160px;
+  object-fit: cover;
+}
+
+.carte1 > img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 130px;
+  object-fit: cover;
+}
+
+.carte2 > img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 100px;
+  object-fit: cover;
+}
+
 .carte > .info{
   padding: 20px;
 }
 
 .carte > .info > h3{
   margin: 0;
+}
+
+.carte1> .info1{
+  padding: 20px;
+}
+
+.carte1> .info1 > h3 {
+  margin: 0;
+}
+
+.carte2> .info{
+  padding: 20px;
+}
+
+.carte2> .info > h3 {
+  margin: 0;
+}
+
+.carte0> .info{
+  padding: 20px;
+}
+
+.carte0> .info > h3 {
+  margin: 0;
+}
+
+#activite > .container > .grid .carte0{
+  margin-bottom: 27px;
+}
+
+#activite > .container > .grid .carte1{
+  margin-bottom: 27px;
 }
 
 .bordure{
@@ -189,9 +302,6 @@ mark{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-
-
 
 .col3 .picture1 {
   height: 370px;
@@ -235,35 +345,4 @@ mark{
 .picture2{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-}
-
-display: grid;
-justify-content: space-between;
-grid-template-columns: 300px 1fr repeat(2,400);
-grid-template-rows: 400px 263px;
-grid-gap: 10px;
-
-
-white1:nth-child(1){
-  order: 1;
-}
-
-white2:nth-child(2){
-  order: 2;
-}
-
-white3:nth-child(3){
-  order: 5;
-}
-
-white4:nth-child(4){
-  order: 3;
-}
-
-white5:nth-child(5){
-  order: 4;
-}
-
-white6:nth-child(6){
-  order: 6;
 }

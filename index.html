@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vos vacance de rêves à marseille</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c97596e0b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <nav id="menu" >
       <div class="container" >
-       <img class="logo" src="./SIMOJULES_P2_05082021/images/logo/Reservia@3x.png" alt=""> <p class="menu" >Hébergements Activités Sinscrire</p>
+       <img class="logo" src="./images/logo/Reservia@3x.png" alt="logo"> <p class="menu" >Hébergements Activités Sinscrire</p>
       </div>
     </nav>
   </header>
@@ -21,10 +22,41 @@
         <div class="text">
           <h1>Trouvez votre hébergemnet pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
-          <h3 class="lieu" >Marseille,France <mark>Rechercher</mark></h3>
-          <div class="filtres" >
-          <h3>Filtres</h3>  <h3> <div class="economique" > Économique </div> </h3> <h3> <div class="famillial" > Famillial </div> </h3> <h3> <div class="romantique" > Romantique </div> </h3> <h3><div class="animaux" > Animaux autorisés </div> </h3>
+
+          <form class="recherche" >
+            <span>
+              <i class="fas fa-solid fa-heart"></i>
+            </span>
+            <span>
+              <input type="search" id="marecherche" name="q"
+              placeholder="Marseille,France">
+            </span>
+            <span>
+              <button class="bouton" >Rechercher</button>
+            </span>
+          </form>
+          <div id="filtre" >
+              <span>
+                  Filtres
+              </span>
+              <span class="filtre" >
+                <i class=" fas fa-solid fa-money-bill-wave"> </i>
+                 Économique
+              </span>
+              <span class="filtre" > 
+                <i class="fas fa-solid fa-child"></i>
+                Famillial
+              </span>
+              <span class="filtre" >  
+                <i class="fas fa-solid fa-heart"></i>
+                Romantique
+              </span>
+              <span class="filtre" >
+                <i class="fas fa-solid fa-heart"></i>
+                Animaux autorisés
+              </span>
           </div>
+          
           <p> Plus de 500 logements sont disponible dans cette ville </p>
           </div>
         <div class="grid">
@@ -33,7 +65,7 @@
               <div class="grid" >
 
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"  alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"  alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -41,7 +73,7 @@
                         </div>
                       </div>
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -49,7 +81,7 @@
                         </div>
                       </div>
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -57,7 +89,7 @@
                         </div>
                       </div>
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -65,7 +97,7 @@
                         </div>
                       </div>
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"  alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"  alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -73,7 +105,7 @@
                         </div>
                       </div>
                       <div class="element white"  >
-                        <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="Hôtel1"> 
+                        <img class="picture" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="Hôtel1"> 
                         <div class="info" >
                               <h3>Auberge La Cannebière</h3>
                               <p>Nuit à partir de <strong>25€</strong></p>
@@ -90,7 +122,7 @@
               <div class="grid" >
                 <div class="element white grid" >
                       
-                  <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel7">
+                  <img class="picture" src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel7">
                   <div class="info" >
                     <h3>Hôtel Le soleil du <br> matin</h3>
                     <p>Nuit à partir de <strong>128€</strong></p>
@@ -104,7 +136,7 @@
                   </div>
                 </div>
                 <div class="element white grid" >
-                  <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel7">
+                  <img class="picture" src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel7">
                   <div class="info" >
                     <h3>Au coeur de l'eau<br>Chambres d'hotes</h3>
                     <p>Nuit à partir de <strong>128€</strong></p>
@@ -118,7 +150,7 @@
                   </div>
                 </div>
                 <div class="element white grid" > 
-                  <img class="picture" src="./SIMOJULES_P2_05082021/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel7">
+                  <img class="picture" src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel7">
                   <div class="info" >
                     <h3>Hôtel Tout bleu et<br>Blanc</h3>
                     <p>Nuit à partir de <strong>128€</strong></p>
@@ -138,79 +170,66 @@
     </section>
     <section id="activite" >
         <div class="container" > 
+          <h2>Activité à Marseille</h2>
             <div class="grid" >
                 <div>
                     <div class="carte" >
-                        <img src="./SIMOJULES_P2_05082021/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite">
+                        <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite">
                         <div class="info" >
                             <h3>Vieux port</h3>
                         </div>
                     </div>
                 </div>
-                <div> </div>
-                <div> </div>
-                <div> </div>
+                <div>
+                  <div>
+                    <div class="carte0" > 
+                      <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activite">
+                        <div class="info" >
+                          <h3>Fort de Pomègues</h3>
+                        </div>
+                    </div>
+                  </div>  
+                  <div>
+                    <div class="carte2" > 
+                      <img src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activite">
+                        <div class="info" >
+                          <h3>Îles de frioul</h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                    <div class="carte" > 
+                        <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activite">
+                        <div class="info" >
+                            <h3>Îles de frioul</h3>
+                        </div>
+                    </div>  
+                </div>
+              <div>
+                    <div>
+                      <div class="carte1" > 
+                        <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activite">
+                          <div class="info1" >
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                          </div>
+                      </div>
+                    </div>  
+                    <div>
+                      <div class="carte1" > 
+                      <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activite">
+                        <div class="info1" >
+                          <h3>Parc Longchamp</h3>
+                        </div>
+                      </div>
+                    </div>
+             </div>
             </div>
         </div>
     </section>
-        <div class="col3" >
-        <h2>Activité à marseille</h2>
-        <div class="grid1">
-            <div class="element1 white1" >
-              <div class="color" >  
-              <img class="picture1" src="./SIMOJULES_P2_05082021/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Vieux port</h3>
-                </div>
-              </div>
-            </div>
-            <div class="element1 white1" >
-              <div class="color" > 
-              <img class="picture2" src="./SIMOJULES_P2_05082021/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Fort de Pomègues</h3>
-                </div>
-              </div>
-            </div>
-            <div class="element1 white1" >
-              <div class="color1" > 
-              <img class="picture2" src="./SIMOJULES_P2_05082021/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Îles de frioul</h3>
-                </div>
-              </div>
-            </div>
-        
-            <div class="element1 white1" >
-              <div class="color" > 
-              <img class="picture1" src="./SIMOJULES_P2_05082021/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Parc National des Calanques</h3>
-                </div>
-              </div>
-            </div>
-            <div class="element1 white1" >
-              <div class="color" > 
-              <img class="picture2" src="./SIMOJULES_P2_05082021/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Notre-Dame-de-la-Garde</h3>
-                </div>
-              </div>
-            </div>
-            <div class="element1 white1" >
-              <div class="color" > 
-              <img class="picture2" src="./SIMOJULES_P2_05082021/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activite">
-                <div class="info1" >
-                  <h3>Parc Longchamp</h3>
-                </div>
-              </div>
-            </div>
-              </div>
-        </div>
-      </div>
-      </div>
   </main>
-  <footer>
+
+  <footer> 
     <div class="footer" >
     <div class="propos" > 
     <H2> A propos</H2> 
