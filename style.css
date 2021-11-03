@@ -446,6 +446,7 @@
     
     .head1{
       color: #0065FC;
+      margin: 50px;
     }
     
     .head2:hover{
@@ -454,6 +455,7 @@
     
     .head3{
       color: #0065FC;
+      margin: 50px;
     }
     
     .head3:hover{
@@ -495,7 +497,7 @@
       border-radius: 13px;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
-      background-color: gray; 
+      background-color: rgb(242, 242, 242); 
     }
     
     
