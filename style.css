@@ -400,9 +400,26 @@
   }
     
     p{
-      font-family:   Arial, Helvetica, sans-serif;
+      font-family: 'Raleway', sans-serif;
     }
     
+    h1{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+    }
+
+    h2{
+      font-family: 'Raleway', sans-serif;
+    }
+
+    h3{
+      font-family: 'Raleway', sans-serif;
+    }
+
+    span{
+      font-family: 'Raleway', sans-serif;
+    }
+
     body,html{
       margin: 0;
     }
@@ -478,7 +495,7 @@
     
     .filtres{
       display: flex;
-      justify-content: space-around
+      justify-content: space-around;
     }
     
     .recherche{
@@ -500,6 +517,7 @@
       background-color: rgb(242, 242, 242); 
     }
     
+  
     
     .filtre{
       margin-left: 20px;
@@ -519,12 +537,17 @@
       width: 35px;
       text-align: center;
     }
-    
+
+    .filtre:hover{
+      background-color: #DEEBFF;
+      transition: .3s;
+    }
+
     .fa-star{
       color: #0065FC;
     }
     .fa-star.grey{
-      color: grey;
+      color: rgb(242, 242, 242);
     }
     
     .bouton{
@@ -554,7 +577,7 @@
     
     #hebergement .col2 .info{
       width: 60%;
-      padding: 10px;
+      padding: 0px;
     }
     
     #hebergement .col2 .picture{
@@ -565,13 +588,14 @@
     
     #hebergement .col1 .info{
       width: 100%;
-      padding: 10px;
+      padding: 0px;
     }
     
     #hebergement .col1 .picture{
       width: 100%;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
+      padding: 0px;
     }
     
     .white{
@@ -708,7 +732,7 @@
     }
     
     .col1 .picture{
-      height: 135px;
+      height: 100px;
       width: 202px;
     }
     
@@ -718,7 +742,8 @@
     }
     
     .picture{
-      margin: 5px;
+      margin: 0px;
+      padding: 0px;
     }
     
     .div .element .white .grid{
