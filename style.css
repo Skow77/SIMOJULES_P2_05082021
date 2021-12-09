@@ -1,10 +1,87 @@
-*{
-
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+*{-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
   }
-@media screen and (min-width:780px) {
+  *{-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+      
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  
+  h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  
+  h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+  
+  span{
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  body,html{
+    margin: 0;
+  }
+  #menu > .container{
+    display: flex;
+  }
+  .container{
+    width: 95%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  
+  .grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #hebergement > .container > .grid > div {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  
+  #hebergement .container .grid .col1 .element{
+    border-radius: 20px;
+    padding: 5px;
+    width: 31%;
+    margin-bottom: 3%;
+  }
+  
+  #hebergement .container .grid .col2 .element{
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  
+  .lieu{
+    border: 1px solid pink;
+    border-radius: 20px;
+    width: 238px;
+  }
+  
+  mark{
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  
+  }
+ 
+  
   #marecherche{
     line-height: 33px;
     padding-left: 10px;
@@ -14,514 +91,411 @@
     outline: none;
     padding: 0px 10px;
   }
-    
-    p{
-      font-family: 'Raleway', sans-serif;
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    }
-    
-    h1{
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-    }
-
-    h2{
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-    }
-
-    h3{
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-    }
-
-    span{
-      font-family: 'Raleway', sans-serif;
-    }
-
-    body,html{
-      margin: 0;
-    }
-    
-    .container{
-      width: 95%;
-      max-width: 1240px;
-      margin: 0 auto;
-    }
-    
-    .grid{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    
-    #hebergement > .container > .grid > div {
-      background-color: #F2F2F2;
-      border-radius: 20px;
-      padding: 30px; 
-    }
-    
-    #hebergement .container .grid .col1 .element{
-      border-radius: 20px;
-      padding: 5px;
-      width: 31%;
-      margin-bottom: 3%;
-    }
-    
-    #hebergement .container .grid .col2 .element{
-      border-radius: 20px;
-      padding: 5px;
-      width: 100%;
-      margin-bottom: 3%;
-    }
-    
-    .head1:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
-    .head1{
-      color: #0065FC;
-      margin: 50px;
-    }
-    
-    .head2:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
-    .head3{
-      color: #0065FC;
-      margin: 50px;
-    }
-    
-    .head3:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
-    .lieu{
-      border: 1px solid pink;
-      border-radius: 20px;
-      width: 238px;
-    }
-    
-    mark{
-      color: white;
-      background-color: #0065FC;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px; 
-    
-    }
-    
-    .filtres{
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    .recherche{
-      border: 1px#d5d5d5 solid;
-      border-radius: 15px;
-      display: inline-block;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-      flex-flow: row wrap;
-      width: fit-content;
-    }
-    
-    .recherche  i{
-      line-height: 45px;
-      height: 45px;
-      width: 45px;
-      text-align: center;
-      border-radius: 13px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      background-color: rgb(242, 242, 242);
-      border: none;
-      outline: none;
-      padding: 0px 10px;
-    }
-    
   
-    
-    .filtre{
-      margin-left: 20px;
-      border: 1px gray solid;
-      border-radius: 20px;
-      line-height: 33px;
-      display: inline-block;
-      padding-right: 15px;
-      margin: 30px;
-    }
-    
-    .filtre > i{
-      background-color: #DEEBFF;
-      color: #0065FC;
-      border-radius: 50px;
-      line-height: 35px;
-      width: 35px;
-      text-align: center;
-    }
-
-    .filtre:hover{
-      background-color: #DEEBFF;
-      transition: .3s;
-    }
-
-    .fa-star{
-      color: #0065FC;
-    }
-    .fa-star.grey{
-      color: rgb(242, 242, 242);
-    }
-    
-    .bouton{
-      background-color: #0065FC;
-      color: white;
-      border-top-right-radius: 13px;
-      border-bottom-right-radius: 13px;
-      line-height: 45px;
-      padding: 0 10px;
-      text-align: center;
-      border: none;
-    }
-    
-    .element.style {
-      border: none;
-      line-height: 45px;
-      outline: none;
-      padding: 0px 10px;
+  #marecherche::placeholder {
+    color: black;
+    font-weight: bold;
   }
   
-
-    .footer{
-      display: flex;
-      justify-content: space-around;
-      background-color: #F2F2F2;
-      margin-top: 50px;
-     
-    }
-    
-    .rechercher{
-      color: white;
-      background-color: red;
-    }
-    
-    #hebergement .col2 .info{
-      width: 60%;
-      padding: 0px;
-    }
-    
-    #hebergement .col2 .picture{
-      width: 35%;
-      border-bottom-left-radius: 20px;
-      border-top-left-radius: 20px;
-    }
-    
-    #hebergement .col1 .info{
-      width: 100%;
-      padding: 0px;
-    }
-    
-    #hebergement .col1 .picture{
-      width: 100%;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-      padding: 0px;
-    }
-    
-    .white{
-      background-color: white;
-    }
-    
-    #hebergement .grid .col1{
-      width: 60%;
-    
-    }
-    
-    #hebergement .grid .col2{
-      width: 35%;
-    }
-    
-    .menu{
-      text-align: right;
-    }
-    
-    .head{
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    #activite > .container > .grid > div{
-      width: 23%;
-      height: 100%;
-    }
-    
-    .carte{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 5px black;
-    }
-    
-    .carte > img{
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      height: 350px;
-      object-fit: cover;
-    }
-    
-    .carte0{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 3px black;
-    }
-    .carte1{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 3px black;
-    }
-    
-    .carte2{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 3px black;
-    }
-    
-    .carte0 > img{
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      height: 160px;
-      object-fit: cover;
-    }
-    
-    .carte1 > img{
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      height: 130px;
-      object-fit: cover;
-    }
-    
-    .carte2 > img{
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      height: 100px;
-      object-fit: cover;
-    }
-    
-    .carte > .info{
-      padding: 20px;
-    }
-    
-    .carte > .info > h3{
-      margin: 0;
-    }
-    
-    .carte1> .info1{
-      padding: 20px;
-    }
-    
-    .carte1> .info1 > h3 {
-      margin: 0;
-    }
-    
-    .carte2> .info{
-      padding: 20px;
-    }
-    
-    .carte2> .info > h3 {
-      margin: 0;
-    }
-    
-    .carte0> .info{
-      padding: 20px;
-    }
-    
-    .carte0> .info > h3 {
-      margin: 0;
-    }
-    
-    #activite > .container > .grid .carte0{
-      margin-bottom: 27px;
-    }
-    
-    #activite > .container > .grid .carte1{
-      margin-bottom: 27px;
-    }
-    
-    .bordure{
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-    
-    .bordure2{
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-    }
-    
-    .col1 .picture{
-      height: 100px;
-      width: 202px;
-    }
-    
-    .col2 .picture{
-      height: 135px;
-      width: 127px;
-    }
-    
-    .fa-chart-line{
-    padding-left: 110px;
-    }
-
-  .fa-light{
-    background-color: blue;
+  .recherche{
+    border: 1px#d5d5d5 solid;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
   }
-
-    .picture{
-      margin: 0px;
-      padding: 0px;
-    }
+  
+  .recherche i.fa-map-marker-alt{ 
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 13px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+  }
+  
+  .recherche button i{
+    display: none;
+  }  
+  .filtre{
+    border: 1px gray solid;
+    border-radius: 20px;
+    line-height: 33px;
+    display: inline-block;
+    padding-right: 15px;
     
-    .div .element .white .grid{
-      margin: 2px;
-    }
-    
-    .logo{
-      height: 50px;
-      width: 70px;
-    }
-    
-    .grid1{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    
-    .col3 .picture1 {
-      height: 370px;
-      width: 270px;
-    }
-    
-    #hebergement .container .grid1 .col3 .element1{
-      border-radius: 20px;
-      padding: 5px;
-      width: 31%;
-      margin-bottom: 3%;
-    }
-    
-    .white1{
-      background-color: rgb(248, 248, 248);
-      width: 270px;
-      height: 263px;
-    }
-    
-    .element1{
-      border-radius: 20px;
-    }
-    
-    .picture1{
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-    }
-    
-    .color{
-      background-color: rgb(247, 244, 244);
-      border-radius: 20px;
-      width: 270px;
-      box-shadow: black 10px;
-    }
-    
-    .col3 .picture2{
-      height: 200px;
-      width: 270px;
-    }
-    
-    .picture2{
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-    }
+  }
+  
+  .filtre > i{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    line-height: 35px;
+    width: 35px;
+    text-align: center;
+  }
+  
+#filtres .label{
+  margin-top: 9px;
+  margin-right: 20px;
 }
 
-@media screen and (min-width:1240px) {
-  #marecherche{
-    line-height: 33px;
-    padding-left: 10px;
-    padding-right: 10px;
+  .filtre:hover{
+    background-color: #DEEBFF;
+    transition: .3s;
+  }
+  
+  .fa-star{
+    color: #0065FC;
+  }
+  .fa-star.grey{
+    color: rgb(242, 242, 242);
+  }
+  
+  .bouton{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    line-height: 45px;
+    padding: 0 10px;
+    text-align: center;
+    border: none;
+  }
+  
+  .element.style {
     border: none;
     line-height: 45px;
     outline: none;
-    padding: 0px 10px;
   }
-    
+  
+  
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+  
+  }
+  
+  .rechercher{
+    color: white;
+    background-color: red;
+  }
+  
+  #hebergement .col2 .info{
+    width: 60%;
+    padding: 0px;
+  }
+  
+  #hebergement .col2 .picture{
+    width: 35%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  #hebergement .col1 .info{
+    width: 100%;
+    padding: 0px;
+  }
+  
+  #hebergement .col1 .info h3{
+    font-size: 17px;
+  }
+  
+  #hebergement .col1 .picture{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0px;
+  }
+  
+  .white{
+    background-color: white;
+  }
+  
+  #hebergement .grid .col1{
+    width: 60%;
+  
+  }
+  
+  #hebergement .grid .col2{
+    width: 35%;
+  }
+  
+  .menu{
+    list-style: none;
+    display: flex;
+    margin-left: 900px;
+  }
+  
+  .head{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #activite > .container > .grid > div{
+    width: 23%;
+    height: 100%;
+  }
+  
+  .carte{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+  }
+  
+  .carte > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .carte0{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+  }
+  .carte1{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+  }
+  
+  .carte2{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+  }
+  
+  .carte0 > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .carte1 > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
+  }
+  
+  .carte2 > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .carte > .info{
+    padding: 20px;
+  }
+  
+  .carte > .info > h3{
+    margin: 0;
+  }
+  
+  .carte1> .info1{
+    padding: 20px;
+  }
+  
+  .carte1> .info1 > h3 {
+    margin: 0;
+  }
+  
+  .carte2> .info{
+    padding: 20px;
+  }
+  
+  .carte2> .info > h3 {
+    margin: 0;
+  }
+  
+  .carte0> .info{
+    padding: 20px;
+  }
+  
+  .carte0> .info > h3 {
+    margin: 0;
+  }
+  
+  #activite > .container > .grid .carte0{
+    margin-bottom: 27px;
+  }
+  
+  #activite > .container > .grid .carte1{
+    margin-bottom: 27px;
+  }
+  
+  .bordure{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  
+  .bordure2{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  
+  .col1 .picture{
+    height: 100px;
+    width: 202px;
+  }
+  
+  .col2 .picture{
+    height: 135px;
+    width: 127px;
+  }
+  
+  .fa-chart-line{
+  padding-left: 110px;
+  }
+  
+  .fa-light{
+  background-color: blue;
+  }
+  
+  .picture{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .div .element .white .grid{
+    margin: 2px;
+  }
+  
+  .logo{
+    height: 50px;
+    width: 70px;
+  }
+  
+  .grid1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col3 .picture1 {
+    height: 370px;
+    width: 270px;
+  }
+  
+  #hebergement .container .grid1 .col3 .element1{
+    border-radius: 20px;
+    padding: 5px;
+    width: 31%;
+    margin-bottom: 3%;
+  }
+  
+  .white1{
+    background-color: rgb(248, 248, 248);
+    width: 270px;
+    height: 263px;
+  }
+  
+  .element1{
+    border-radius: 20px;
+  }
+  
+  .picture1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .color{
+    background-color: rgb(247, 244, 244);
+    border-radius: 20px;
+    width: 270px;
+    box-shadow: black 10px;
+  }
+  
+  .col3 .picture2{
+    height: 200px;
+    width: 270px;
+  }
+  
+  .picture2{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  @media screen and (min-width:1240px) {
+  
+  
     p{
       font-family: 'Raleway', sans-serif;
       padding-right: 0px;
       padding-left: 0px;
     }
     }
-    
+  
     h1{
       font-family: 'Raleway', sans-serif;
       font-weight: 600;
     }
-
+  
     h2{
       font-family: 'Raleway', sans-serif;
       font-weight: 600;
     }
-
+  
     h3{
       font-family: 'Raleway', sans-serif;
       font-weight: 600;
       margin-block-end: 0px;
       margin-block-start: 0px;
     }
-
+  
     span{
       font-family: 'Raleway', sans-serif;
     }
-
+  
     body,html{
       margin: 0;
     }
-    
+  
     .container{
       width: 95%;
       max-width: 1240px;
       margin: 0 auto;
     }
-    
+  
     .grid{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    
+  
     #hebergement > .container > .grid > div {
       background-color: #F2F2F2;
       border-radius: 20px;
-      padding: 30px; 
+      padding: 30px;
     }
-    
+  
     #hebergement .container .grid .col1 .element{
       border-radius: 20px;
       padding: 5px;
-      width: 33%;
+      width: 31%;
       margin-bottom: 3%;
     }
-    
+  
     #hebergement .container .grid .col2 .element{
       border-radius: 20px;
       padding: 5px;
@@ -529,51 +503,21 @@
       margin-bottom: 3%;
       margin-top: 15px;
     }
-    
-    .head1:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
-    .head1{
-      color: #0065FC;
-      margin: 50px;
-    }
-    
-    .head2:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
-    .head3{
-      color: #0065FC;
-      margin: 50px;
-    }
-    
-    .head3:hover{
-      border-top: 2px solid #0065FC;
-      padding-top: 10px;
-    }
-    
+  
     .lieu{
       border: 1px solid pink;
       border-radius: 20px;
       width: 238px;
     }
-    
+  
     mark{
       color: white;
       background-color: #0065FC;
       border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px; 
-    
+      border-bottom-right-radius: 20px;
+  
     }
-    
-    .filtres{
-      display: flex;
-      justify-content: space-around;
-    }
-    
+
     .recherche{
       border: 1px#d5d5d5 solid;
       border-radius: 15px;
@@ -584,36 +528,35 @@
       flex-flow: row wrap;
       width: fit-content;
     }
-    
-    .recherche  i{
-      line-height: 45px;
-      height: 45px;
-      width: 45px;
-      text-align: center;
-      border-radius: 13px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      background-color: rgb(242, 242, 242);
-      border: none;
-      outline: none;
-      padding: 0px 10px;
-    }
-    
+  
+  
     .marge{
       margin-block-end: 5px;
       margin-block-start: 5px;
     }
-    
+ 
+
+    #filtres{
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    #filtres span {
+      font-weight: bold;
+
+    }
+   
     .filtre{
-      margin-left: 20px;
-      border: 1px gray solid;
+      border: solid 2px #f2f2f2;
       border-radius: 20px;
       line-height: 33px;
       display: inline-block;
       padding-right: 15px;
-      margin: 30px;
+      margin-right: 20px;
     }
-    
+  
     .filtre > i{
       background-color: #DEEBFF;
       color: #0065FC;
@@ -621,21 +564,23 @@
       line-height: 35px;
       width: 35px;
       text-align: center;
+      display: inline-block;
+      margin-left: -2px;
     }
-
+  
     .filtre:hover{
       background-color: #DEEBFF;
       transition: .3s;
     }
-
+  
     .fa-star{
       color: #0065FC;
-           
+  
     }
     .fa-star.grey{
       color: rgb(242, 242, 242);
     }
-    
+  
     .bouton{
       background-color: #0065FC;
       color: white;
@@ -646,268 +591,540 @@
       text-align: center;
       border: none;
     }
-    
+  
     .element.style {
       border: none;
       line-height: 45px;
       outline: none;
-      padding: 0px 10px;
   }
   
-
+  
     .footer{
       display: flex;
       justify-content: space-around;
       background-color: #F2F2F2;
       margin-top: 50px;
-     
+  
     }
-    
+  
     .rechercher{
       color: white;
       background-color: red;
     }
-    
+  
     #hebergement .col2 .info{
       width: 60%;
       padding: 0px;
     }
-    
+  
     #hebergement .col2 .picture{
       width: 35%;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
     }
-    
+  
     #hebergement .col1 .info{
       width: 100%;
       padding: 0px;
     }
-    
+  
     #hebergement .col1 .picture{
       width: 100%;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
       padding: 0px;
     }
-    
+  
     .white{
       background-color: white;
     }
-    
+  
     #hebergement .grid .col1{
-      width: 60%;
+      width: 62%;
     }
-    
+  
     #hebergement .grid .col2{
       width: 35%;
     }
-    
-    .menu{
-      text-align: right;
+  
+    .menu li:last-child {
+      margin-left: 65px;
     }
     
+
+    .menu li:hover {
+      border-top: 2px solid #0065FC;
+    }
+  
+    .menu a {
+      font-family: 'Raleway', sans-serif;
+      color: #0065FC;
+      text-decoration: none;
+    }
+  
     .head{
       display: flex;
       justify-content: space-between;
     }
-    
+  
     #activite > .container > .grid > div{
       width: 23%;
       height: 100%;
     }
-    
+  
     .carte{
       width: 100%;
       border-radius: 20px;
       background-color: white;
-      box-shadow: 0 0 5px black;
+      box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
     }
-    
+  
     .carte > img{
       width: 100%;
       border-radius: 20px 20px 0 0;
       height: 350px;
       object-fit: cover;
     }
-    
-    .carte0{
+  
+    .carte0, .carte1, .carte2{
       width: 100%;
       border-radius: 20px;
       background-color: white;
-      box-shadow: 0 0 3px black;
+      box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
     }
-    .carte1{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 3px black;
-    }
-    
-    .carte2{
-      width: 100%;
-      border-radius: 20px;
-      background-color: white;
-      box-shadow: 0 0 3px black;
-    }
-    
     .carte0 > img{
       width: 100%;
       border-radius: 20px 20px 0 0;
       height: 160px;
       object-fit: cover;
     }
-    
+  
     .carte1 > img{
       width: 100%;
       border-radius: 20px 20px 0 0;
       height: 130px;
       object-fit: cover;
     }
-    
+  
     .carte2 > img{
       width: 100%;
       border-radius: 20px 20px 0 0;
       height: 100px;
       object-fit: cover;
     }
-    
+  
     .carte > .info{
       padding: 20px;
     }
-    
+  
     .carte > .info > h3{
       margin: 0;
     }
-    
+  
     .carte1> .info1{
       padding: 20px;
     }
-    
+  
     .carte1> .info1 > h3 {
       margin: 0;
     }
-    
+  
     .carte2> .info{
       padding: 20px;
     }
-    
+  
     .carte2> .info > h3 {
       margin: 0;
     }
-    
+  
     .carte0> .info{
       padding: 20px;
     }
-    
+  
     .carte0> .info > h3 {
       margin: 0;
     }
-    
+  
     #activite > .container > .grid .carte0{
       margin-bottom: 27px;
     }
-    
+  
     #activite > .container > .grid .carte1{
       margin-bottom: 27px;
     }
-    
+  
     .bordure{
       border-bottom-right-radius: 0px;
       border-bottom-left-radius: 0px;
     }
-    
+  
     .bordure2{
       border-bottom-right-radius: 0px;
       border-top-right-radius: 0px;
     }
-    
+  
     .col1 .picture{
       height: 110px;
       width: 202px;
       object-fit: cover;
     }
-    
+  
     .col2 .picture{
-      height: 135px;
+      height: 100%;
+      max-height: 135px;
       width: 127px;
       object-fit: cover;
     }
-    
+  
     .fa-chart-line{
     padding-left: 110px;
     }
-
+  
   .fa-light{
     background-color: blue;
   }
-
+  
   .etoile{
     margin-top: 30px;
   }
-
+  
     .picture{
       margin: 0px;
       padding: 0px;
     }
-    
+  
     .div .element .white .grid{
       margin: 2px;
     }
-    
+  
     .logo{
       height: 50px;
       width: 70px;
     }
-    
+  
     .grid1{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    
+  
     .col3 .picture1 {
       height: 370px;
       width: 270px;
     }
-    
+  
     #hebergement .container .grid1 .col3 .element1{
       border-radius: 20px;
       padding: 5px;
       width: 31%;
       margin-bottom: 3%;
     }
-    
+  
     .white1{
       background-color: rgb(248, 248, 248);
       width: 270px;
       height: 263px;
     }
-    
+  
     .element1{
       border-radius: 20px;
     }
-    
+  
     .picture1{
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
     }
-    
+  
     .color{
       background-color: rgb(247, 244, 244);
       border-radius: 20px;
       width: 270px;
       box-shadow: black 10px;
     }
-    
+  
     .col3 .picture2{
       height: 200px;
       width: 270px;
     }
-    
+  
     .picture2{
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
     }
+  
+  @media screen and (min-width:768px) {
+    #marecherche{
+      line-height: 33px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: none;
+      line-height: 45px;
+      outline: none;
+      padding: 0px 10px;
+    }
+  
+    p{
+      font-family: 'Raleway', sans-serif;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+  }
+
+ 
+
+  @media screen and (max-width: 768px) {
+    .logo{
+       text-align: center;
+       object-fit: contain;
+       width: 100%;
+    } 
+    #hebergement .container .grid .col2 .element{
+      flex-direction: row;
+    }
+
+    #hebergement .container .grid .col2 .element .picture{
+      height: 108,5px;
+    }
+
+   .fa-chart-line{
+     padding-left: 412px;
+   }
+
+   .filtre:hover{
+    background-color: #DEEBFF;
+    transition: .3s;
+  }
+
+  .menu li:hover {
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+    padding-top: 0px;
+  }
+
+   #filtres{
+     flex-wrap: wrap;
+   } 
+
+   #filtres .label{
+    width: 100%;
+  }
+
+
+  .bouton {
+   background-color: #0065FC;
+   color: white;
+   border-top-right-radius: 13px;
+   border-bottom-right-radius: 13px;
+   border-top-left-radius: 13px;
+   border-bottom-left-radius: 13px;
+   line-height: 45px;
+   padding: 0 10px;
+   text-align: center;
+   border: none;
+   height: 45px;
+   width: 45px;
+  }
+
+  .element.style {
+   border: none;
+   line-height: 45px;
+   outline: none;
+  }
+
+  .recherche button i{
+     display: block;
+  }
+
+  .recherche button span{
+    display: none;
+  }
+
+  .col2{
+    margin-top: 15px;
+  }
+
+  #filtres .filtre{
+   margin-left: 5px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+  }
+
+  .col1 .picture {
+    height: 200px;
+    width: 202px;
+    object-fit: cover;
+  }
+
+  .carte{
+    margin-bottom: 40px;
+  }
+
+
+  #activite > .container > .grid .carte0{
+    margin-bottom: 40px;
+  }
+
+  #activite > .container > .grid .carte1{
+    margin-bottom: 40px;
+  }
+
+  #activite > .container > .grid .carte2{
+    margin-bottom: 40px;
+  }
+
+
+  .carte > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .carte0 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .carte1 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .carte2 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 230px;
+    object-fit: cover;
+  }
+
+    header.head {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+     
+      .head{
+        flex-direction: column;
+      }
+      .grid {
+        flex-direction: column;
+      }
+      #hebergement .grid{
+        flex-direction: column-reverse;
+      }
+      #hebergement .grid .col2,
+      #hebergement .grid .col1{
+        width: 100%;
+      }
+      
+      #activite > .container > .grid > div {
+        width: 100%;
+    }
+
+      #hebergement .container .grid .col1 .element{
+        width: 90%;
+      }
+  }
+
+
+  @media screen and (max-width:767px){
+    .menu{
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+    }
+    .head1{
+      width: 70%;
+      border-bottom: solid rgb(242, 242, 242) 4px;
+      padding-top: 0px;
+    }
+
+    .col2{
+      margin-top: 15px;
+    }
+
+    .head2{
+      width: 70%;
+      border-bottom: solid rgb(242, 242, 242) 4px;
+      margin-left: 0px;
+      padding-top: 0px;
+    }
+
+    #filtres .filtre{
+      margin-right: 26px;
+    }
+
+    .fa-info-circle:before {
+      content: "\f05a";
+      color: blue;
+      padding-right: 10px;
+  }
+  .fa-chart-line {
+    padding-left: 80px;
+  }
+
+  .col2 .picture {
+    max-height: 135px;
+    width: 127px;
+    object-fit: cover;
+    height: 135px;
+  }
+
+  #hebergement .container .grid .col1 .element {
+    width: 100%;
+  }
+
+  .col1 .picture{
+    height: 130px;
+  }
+
+  #hebergement .col1 .info {
+    width: 100%;
+    padding: 0px;
+    padding-top: 5px;
+  }
+
+  .carte > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .carte0 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .carte1 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .carte2 > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
   }
